@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="style.css">
+        <section id="booking">
+            <h2>Забронировать Столик</h2>
+            <p>Заполните форму ниже, и мы свяжемся с вами для подтверждения брони.</p>
+            <form action="#" method="post"> <!-- action="#" - заглушка, здесь должен быть URL вашего бэкенда -->
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Ваш Телефон:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Время:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Количество гостей:</label>
+                <input type="number" id="guests" name="guests" min="1" value="2" required>
+
+                <label for="message">Комментарии (необязательно):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </div>
